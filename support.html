@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Atlas Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7fafc;
+      --panel: #ffffff;
+      --text: #13202a;
+      --muted: #546575;
+      --line: #d8e1e8;
+      --accent: #0e7490;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #06111a;
+        --panel: #0d1c27;
+        --text: #eef7ff;
+        --muted: #9fb0bf;
+        --line: #1d3545;
+        --accent: #22d3ee;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 64px;
+    }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: clamp(22px, 5vw, 42px);
+    }
+    h1, h2 { line-height: 1.15; letter-spacing: 0; }
+    h1 { margin: 0 0 8px; font-size: clamp(32px, 7vw, 48px); }
+    h2 { margin: 30px 0 10px; font-size: 24px; }
+    p, li { font-size: 17px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 16px 22px; padding: 0; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 34px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Night Atlas Support</h1>
+      <p class="muted">Help and contact information for Night Atlas.</p>
+
+      <h2>Support</h2>
+      <p>If you have an issue with Night Atlas, include your device model, iOS version, app version, and a short description of what happened.</p>
+      <p>Developer: Denis Isupov</p>
+      <p>Contact method: use the App Store review contact flow or the developer contact listed on the App Store product page.</p>
+
+      <h2>Common Questions</h2>
+      <ul>
+        <li>Progress is stored locally on your device.</li>
+        <li>The current version does not require an account.</li>
+        <li>The current version does not include ads, analytics, or tracking.</li>
+      </ul>
+
+      <p><a href="privacy.html">Privacy Policy</a></p>
+
+      <hr>
+
+      <h1>Поддержка Night Atlas</h1>
+      <p class="muted">Помощь и контактная информация для Night Atlas.</p>
+
+      <h2>Поддержка</h2>
+      <p>Если у вас возникла проблема с Night Atlas, укажите модель устройства, версию iOS, версию приложения и краткое описание ошибки.</p>
+      <p>Разработчик: Денис Исупов</p>
+      <p>Способ связи: используйте контакт разработчика на странице приложения в App Store.</p>
+
+      <h2>Частые вопросы</h2>
+      <ul>
+        <li>Прогресс хранится локально на устройстве.</li>
+        <li>Текущая версия не требует аккаунта.</li>
+        <li>Текущая версия не содержит рекламы, аналитики или трекинга.</li>
+      </ul>
+
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+    </section>
+  </main>
+</body>
+</html>

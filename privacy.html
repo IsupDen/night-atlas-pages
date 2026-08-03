@@ -58,7 +58,7 @@
   <main>
     <article>
       <h1>Night Atlas Privacy Policy</h1>
-      <p class="muted">Effective and last updated: August 3, 2026</p>
+      <p class="muted">Effective and last updated: August 4, 2026</p>
       <p>Night Atlas is a geography quiz game that works offline without an account. Some versions may offer an optional account for progress synchronization. If the version installed on your device does not show the account feature, the app does not send your gameplay or personal data to the Night Atlas backend. The sections about server processing apply only if account features are available and you choose to use them.</p>
 
       <h2>Data Stored On Your Device</h2>
@@ -71,7 +71,7 @@
         <li>selected app language;</li>
         <li>a safety backup created before progress is merged, when applicable.</li>
       </ul>
-      <p>This data is stored using Apple-provided local storage and is used to operate the game. If you use an optional account, the app also stores session credentials in the iOS Keychain and a random installation identifier locally.</p>
+      <p>This data is stored using Apple-provided local storage and is used to operate the game. If you use an optional account, the app also stores session credentials in the iOS Keychain and a random installation identifier locally. After you confirm account deletion, a random deletion-recovery receipt stays in the Keychain only until the app can verify the server result.</p>
       <p>Signing out or deleting an account does not delete local gameplay progress. You can remove the on-device copy by deleting the app and its data through iOS.</p>
 
       <h2>Optional Account Data</h2>
@@ -79,7 +79,7 @@
       <ul>
         <li>your email address;</li>
         <li>internal account, user, and profile identifiers, plus a private fallback display name or identifier used internally;</li>
-        <li>a random app-installation identifier and related hashes or migration identifiers;</li>
+        <li>a random app-installation identifier, a random deletion-recovery receipt, and related one-way hashes or migration identifiers;</li>
         <li>synchronized gameplay content, including progress, scores, level and country statistics, streaks, rewards, collection progress, and arcade records;</li>
         <li>product-interaction and technical metadata, such as account setup, synchronization, and deletion events and timestamps, app language and version, and dataset version;</li>
         <li>security and diagnostic information, such as IP address, User-Agent, and authentication or proxy logs.</li>
@@ -106,7 +106,7 @@
       <p>Requesting the first code creates a pending email authentication record. If the code is never verified and the record has no session or profile, it is automatically deleted within 24 hours.</p>
       <p>To delete an account in the app, open <strong>Profile → Account → Delete Account → Send Code</strong>, enter the emailed code, and choose <strong>Confirm Deletion</strong>. Account deletion removes the authentication identity and email address, active sessions, private display name, server-side installation records, and synchronized gameplay and progress data.</p>
       <p>Deleting an account does not erase gameplay progress stored locally on your device.</p>
-      <p>Minimal deletion, security, authentication, and proxy logs may be retained for no more than 30 days. These logs may include pseudonymous internal identifiers, event types and timestamps, IP address, User-Agent, and integrity metadata. They are retained only for security, deletion verification, fraud prevention, troubleshooting, or legal compliance, and are not used for ads, tracking, analytics, or marketing.</p>
+      <p>Minimal deletion, security, authentication, and proxy logs may be retained for no more than 30 days. These logs may include pseudonymous internal identifiers, the one-way hash of the random deletion-recovery receipt, event types and timestamps, IP address, User-Agent, and integrity metadata. The raw receipt is removed from the device when deletion completion is verified and is not stored in the database. These records are retained only for security, deletion verification, fraud prevention, troubleshooting, or legal compliance, and are not used for ads, tracking, analytics, or marketing.</p>
       <p>Deleted server data may remain in encrypted disaster-recovery snapshots for up to 7 days. These snapshots are isolated from ordinary use and automatically expire or are overwritten. Any longer retention would occur only if required by law.</p>
 
       <h2>Tracking, Advertising, And Analytics</h2>
@@ -132,7 +132,7 @@
       <hr>
 
       <h1>Политика конфиденциальности Night Atlas</h1>
-      <p class="muted">Дата вступления в силу и последнего обновления: 3 августа 2026 г.</p>
+      <p class="muted">Дата вступления в силу и последнего обновления: 4 августа 2026 г.</p>
       <p>Night Atlas — игра-викторина для изучения географии, которая работает офлайн без аккаунта. В некоторых версиях может быть доступен необязательный аккаунт для синхронизации прогресса. Если в установленной на вашем устройстве версии нет функции аккаунта, приложение не отправляет игровой прогресс или персональные данные на backend Night Atlas. Разделы об обработке данных на сервере применяются только тогда, когда функции аккаунта доступны и вы решили ими воспользоваться.</p>
 
       <h2>Данные, которые хранятся на устройстве</h2>
@@ -145,7 +145,7 @@
         <li>выбранный язык приложения;</li>
         <li>резервную копию, созданную перед объединением прогресса, если применимо.</li>
       </ul>
-      <p>Эти данные хранятся в локальном хранилище Apple и используются для работы игры. Если вы используете необязательный аккаунт, приложение также хранит данные сессии в Связке ключей iOS и случайный идентификатор установки локально.</p>
+      <p>Эти данные хранятся в локальном хранилище Apple и используются для работы игры. Если вы используете необязательный аккаунт, приложение также хранит данные сессии в Связке ключей iOS и случайный идентификатор установки локально. После подтверждения удаления аккаунта случайная квитанция восстановления хранится в Связке ключей только до проверки результата на сервере.</p>
       <p>Выход из аккаунта или удаление аккаунта не удаляют локальный игровой прогресс. Копию на устройстве можно удалить, удалив приложение и его данные средствами iOS.</p>
 
       <h2>Данные необязательного аккаунта</h2>
@@ -153,7 +153,7 @@
       <ul>
         <li>ваш адрес email;</li>
         <li>внутренние идентификаторы аккаунта, пользователя и профиля, а также закрытое резервное отображаемое имя или идентификатор для внутреннего использования;</li>
-        <li>случайный идентификатор установки приложения и связанные хеши или идентификаторы миграции;</li>
+        <li>случайный идентификатор установки приложения, случайную квитанцию восстановления удаления и связанные односторонние хеши или идентификаторы миграции;</li>
         <li>синхронизированные игровые данные, включая прогресс, очки, статистику уровней и стран, стрики, награды, прогресс коллекции и рекорды аркады;</li>
         <li>технические метаданные и сведения о взаимодействии с продуктом, например события и время создания аккаунта, синхронизации и удаления, язык и версию приложения, версию набора данных;</li>
         <li>сведения для безопасности и диагностики, например IP-адрес, User-Agent, журналы аутентификации или прокси-сервера.</li>
@@ -180,7 +180,7 @@
       <p>При запросе первого кода создается ожидающая подтверждения запись аутентификации с адресом email. Если код не подтвержден и у записи нет сессии или профиля, она автоматически удаляется в течение 24 часов.</p>
       <p>Чтобы удалить аккаунт в приложении, откройте <strong>Профиль → Аккаунт → Удалить аккаунт → Отправить код</strong>, введите код из письма и выберите <strong>Подтвердить удаление</strong>. При удалении аккаунта удаляются данные аутентификации и адрес email, активные сессии, закрытое отображаемое имя, серверные записи об установке приложения, синхронизированный игровой прогресс и игровые данные.</p>
       <p>Удаление аккаунта не стирает игровой прогресс, сохраненный локально на вашем устройстве.</p>
-      <p>Минимальные журналы удаления, безопасности, аутентификации и прокси-сервера могут храниться не более 30 дней. Они могут включать псевдонимные внутренние идентификаторы, типы и время событий, IP-адрес, User-Agent и метаданные целостности. Они хранятся только для безопасности, подтверждения удаления, предотвращения мошенничества, диагностики или соблюдения закона и не используются для рекламы, трекинга, аналитики или маркетинга.</p>
+      <p>Минимальные журналы удаления, безопасности, аутентификации и прокси-сервера могут храниться не более 30 дней. Они могут включать псевдонимные внутренние идентификаторы, односторонний хеш случайной квитанции восстановления удаления, типы и время событий, IP-адрес, User-Agent и метаданные целостности. Исходная квитанция удаляется с устройства после подтверждения завершения удаления и не хранится в базе данных. Эти записи хранятся только для безопасности, подтверждения удаления, предотвращения мошенничества, диагностики или соблюдения закона и не используются для рекламы, трекинга, аналитики или маркетинга.</p>
       <p>Удаленные серверные данные могут оставаться в зашифрованных снимках аварийного восстановления до 7 дней. Эти снимки изолированы от обычного использования и автоматически удаляются или перезаписываются. Более длительное хранение возможно только тогда, когда этого требует закон.</p>
 
       <h2>Трекинг, реклама и аналитика</h2>

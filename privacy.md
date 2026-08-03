@@ -1,6 +1,6 @@
 # Night Atlas Privacy Policy
 
-Effective and last updated: August 3, 2026
+Effective and last updated: August 4, 2026
 
 Night Atlas is a geography quiz game that works offline without an account. Some versions may offer an optional account for progress synchronization. If the version installed on your device does not show the account feature, the app does not send your gameplay or personal data to the Night Atlas backend. The sections about server processing apply only if account features are available and you choose to use them.
 
@@ -15,7 +15,7 @@ Night Atlas stores gameplay data locally on your device, including:
 - selected app language;
 - a safety backup created before progress is merged, when applicable.
 
-This data is stored using Apple-provided local storage and is used to operate the game. If you use an optional account, the app also stores session credentials in the iOS Keychain and a random installation identifier locally.
+This data is stored using Apple-provided local storage and is used to operate the game. If you use an optional account, the app also stores session credentials in the iOS Keychain and a random installation identifier locally. After you confirm account deletion, a random deletion-recovery receipt stays in the Keychain only until the app can verify the server result.
 
 Signing out or deleting an account does not delete local gameplay progress. You can remove the on-device copy by deleting the app and its data through iOS.
 
@@ -25,7 +25,7 @@ If optional account features are available and you request an email code or use 
 
 - your email address;
 - internal account, user, and profile identifiers, plus a private fallback display name or identifier used internally;
-- a random app-installation identifier and related hashes or migration identifiers;
+- a random app-installation identifier, a random deletion-recovery receipt, and related one-way hashes or migration identifiers;
 - synchronized gameplay content, including progress, scores, level and country statistics, streaks, rewards, collection progress, and arcade records;
 - product-interaction and technical metadata, such as account setup, synchronization, and deletion events and timestamps, app language and version, and dataset version;
 - security and diagnostic information, such as IP address, User-Agent, and authentication or proxy logs.
@@ -60,7 +60,7 @@ To delete an account in the app, open **Profile → Account → Delete Account �
 
 Deleting an account does not erase gameplay progress stored locally on your device.
 
-Minimal deletion, security, authentication, and proxy logs may be retained for no more than 30 days. These logs may include pseudonymous internal identifiers, event types and timestamps, IP address, User-Agent, and integrity metadata. They are retained only for security, deletion verification, fraud prevention, troubleshooting, or legal compliance, and are not used for ads, tracking, analytics, or marketing.
+Minimal deletion, security, authentication, and proxy logs may be retained for no more than 30 days. These logs may include pseudonymous internal identifiers, the one-way hash of the random deletion-recovery receipt, event types and timestamps, IP address, User-Agent, and integrity metadata. The raw receipt is removed from the device when deletion completion is verified and is not stored in the database. These records are retained only for security, deletion verification, fraud prevention, troubleshooting, or legal compliance, and are not used for ads, tracking, analytics, or marketing.
 
 Deleted server data may remain in encrypted disaster-recovery snapshots for up to 7 days. These snapshots are isolated from ordinary use and automatically expire or are overwritten. Any longer retention would occur only if required by law.
 
@@ -96,7 +96,7 @@ GitHub issues are public. Do not post your email address, one-time code, login c
 
 # Политика конфиденциальности Night Atlas
 
-Дата вступления в силу и последнего обновления: 3 августа 2026 г.
+Дата вступления в силу и последнего обновления: 4 августа 2026 г.
 
 Night Atlas — игра-викторина для изучения географии, которая работает офлайн без аккаунта. В некоторых версиях может быть доступен необязательный аккаунт для синхронизации прогресса. Если в установленной на вашем устройстве версии нет функции аккаунта, приложение не отправляет игровой прогресс или персональные данные на backend Night Atlas. Разделы об обработке данных на сервере применяются только тогда, когда функции аккаунта доступны и вы решили ими воспользоваться.
 
@@ -111,7 +111,7 @@ Night Atlas хранит игровой прогресс локально на �
 - выбранный язык приложения;
 - резервную копию, созданную перед объединением прогресса, если применимо.
 
-Эти данные хранятся в локальном хранилище Apple и используются для работы игры. Если вы используете необязательный аккаунт, приложение также хранит данные сессии в Связке ключей iOS и случайный идентификатор установки локально.
+Эти данные хранятся в локальном хранилище Apple и используются для работы игры. Если вы используете необязательный аккаунт, приложение также хранит данные сессии в Связке ключей iOS и случайный идентификатор установки локально. После подтверждения удаления аккаунта случайная квитанция восстановления хранится в Связке ключей только до проверки результата на сервере.
 
 Выход из аккаунта или удаление аккаунта не удаляют локальный игровой прогресс. Копию на устройстве можно удалить, удалив приложение и его данные средствами iOS.
 
@@ -121,7 +121,7 @@ Night Atlas хранит игровой прогресс локально на �
 
 - ваш адрес email;
 - внутренние идентификаторы аккаунта, пользователя и профиля, а также закрытое резервное отображаемое имя или идентификатор для внутреннего использования;
-- случайный идентификатор установки приложения и связанные хеши или идентификаторы миграции;
+- случайный идентификатор установки приложения, случайную квитанцию восстановления удаления и связанные односторонние хеши или идентификаторы миграции;
 - синхронизированные игровые данные, включая прогресс, очки, статистику уровней и стран, стрики, награды, прогресс коллекции и рекорды аркады;
 - технические метаданные и сведения о взаимодействии с продуктом, например события и время создания аккаунта, синхронизации и удаления, язык и версию приложения, версию набора данных;
 - сведения для безопасности и диагностики, например IP-адрес, User-Agent, журналы аутентификации или прокси-сервера.
@@ -156,7 +156,7 @@ Night Atlas хранит игровой прогресс локально на �
 
 Удаление аккаунта не стирает игровой прогресс, сохраненный локально на вашем устройстве.
 
-Минимальные журналы удаления, безопасности, аутентификации и прокси-сервера могут храниться не более 30 дней. Они могут включать псевдонимные внутренние идентификаторы, типы и время событий, IP-адрес, User-Agent и метаданные целостности. Они хранятся только для безопасности, подтверждения удаления, предотвращения мошенничества, диагностики или соблюдения закона и не используются для рекламы, трекинга, аналитики или маркетинга.
+Минимальные журналы удаления, безопасности, аутентификации и прокси-сервера могут храниться не более 30 дней. Они могут включать псевдонимные внутренние идентификаторы, односторонний хеш случайной квитанции восстановления удаления, типы и время событий, IP-адрес, User-Agent и метаданные целостности. Исходная квитанция удаляется с устройства после подтверждения завершения удаления и не хранится в базе данных. Эти записи хранятся только для безопасности, подтверждения удаления, предотвращения мошенничества, диагностики или соблюдения закона и не используются для рекламы, трекинга, аналитики или маркетинга.
 
 Удаленные серверные данные могут оставаться в зашифрованных снимках аварийного восстановления до 7 дней. Эти снимки изолированы от обычного использования и автоматически удаляются или перезаписываются. Более длительное хранение возможно только тогда, когда этого требует закон.
 

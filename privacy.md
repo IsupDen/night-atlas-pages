@@ -54,6 +54,8 @@ Account data is transmitted over HTTPS/TLS. Service providers process data only 
 
 Account data is kept while your account is active and is needed to provide synchronization.
 
+Requesting the first code creates a pending email authentication record. If the code is never verified and the record has no session or profile, it is automatically deleted within 24 hours.
+
 To delete an account in the app, open **Profile → Account → Delete Account → Send Code**, enter the emailed code, and choose **Confirm Deletion**. Account deletion removes the authentication identity and email address, active sessions, private display name, server-side installation records, and synchronized gameplay and progress data.
 
 Deleting an account does not erase gameplay progress stored locally on your device.
@@ -147,6 +149,8 @@ Night Atlas хранит игровой прогресс локально на �
 ## Сроки хранения и удаление аккаунта
 
 Данные аккаунта хранятся, пока аккаунт активен и они нужны для синхронизации.
+
+При запросе первого кода создается ожидающая подтверждения запись аутентификации с адресом email. Если код не подтвержден и у записи нет сессии или профиля, она автоматически удаляется в течение 24 часов.
 
 Чтобы удалить аккаунт в приложении, откройте **Профиль → Аккаунт → Удалить аккаунт → Отправить код**, введите код из письма и выберите **Подтвердить удаление**. При удалении аккаунта удаляются данные аутентификации и адрес email, активные сессии, закрытое отображаемое имя, серверные записи об установке приложения, синхронизированный игровой прогресс и игровые данные.
 

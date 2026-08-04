@@ -1,6 +1,6 @@
 # Night Atlas Privacy Policy
 
-Effective and last updated: August 4, 2026
+Effective and last updated: August 5, 2026
 
 Night Atlas is a geography quiz game that works offline without an account. Some versions may offer an optional account for progress synchronization. If the version installed on your device does not show the account feature, the app does not send your gameplay or personal data to the Night Atlas backend. The sections about server processing apply only if account features are available and you choose to use them.
 
@@ -44,9 +44,21 @@ We use optional account data only to:
 
 We do not use this data for advertising, cross-app or cross-website tracking, analytics, profiling, or marketing, and we do not sell it.
 
+## Support Email Data
+
+If you choose to contact Night Atlas support, you send an email through your own email service. The Night Atlas app opens an external Support page and does not itself transmit your support message or attachments.
+
+Support processing may include the sender and recipient email addresses; the raw RFC 5322 message, including its subject, text or HTML parts, and any attachments you choose to include; delivery, authentication, and threading headers; provider activity metadata; and limited private storage metadata consisting of the record version, receipt and expiry times, raw message size, and a bounded sender hint.
+
+Only the exact address [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me) accepts support mail; catch-all routing is disabled. Cloudflare Email Routing sends incoming mail to a dedicated Email Worker, which accepts raw messages of no more than 10 MiB and stores them in a private Workers KV namespace. There is no public inbox or automatic reply. The support tooling does not automatically open, extract, execute, or save attachments. The developer accesses messages manually through owner-authorized Cloudflare management tooling.
+
+A human writes each reply. Replies are sent from `support@night-atlas.isupden.me` through a dedicated sender-only Yandex Cloud Postbox service account. Night Atlas does not add email-open or link-click tracking.
+
 ## Service Providers And Data Location
 
-The optional account service uses a self-hosted, Supabase-compatible open-source backend running on Yandex Cloud in the `ru-central1` region in Russia. Supabase Inc. does not host the backend as a managed service. Yandex Cloud provides the hosting, storage, networking, and security infrastructure. Yandex Cloud Postbox is used to deliver one-time authentication codes by email.
+The optional account service uses a self-hosted, Supabase-compatible open-source backend running on Yandex Cloud in the `ru-central1` region in Russia. Supabase Inc. does not host the backend as a managed service. Yandex Cloud provides the hosting, storage, networking, and security infrastructure. Yandex Cloud Postbox is used to deliver one-time authentication codes and human support replies by email.
+
+Cloudflare, Inc. provides Email Routing, Email Workers, and Workers KV for incoming support mail. Cloudflare processes incoming messages on its global network and stores the raw message in private KV, so support data may be processed or stored outside your country and transferred across borders. Your email provider also processes the message. Yandex Cloud Postbox in Russia processes human replies and related delivery metadata. Support messages are not stored in the Night Atlas account database or its disaster-recovery snapshots. Workers KV encrypts stored values at rest and service connections use encryption in transit.
 
 Account data is transmitted over HTTPS/TLS. Service providers process data only as needed to provide these functions or comply with law.
 
@@ -64,13 +76,15 @@ Minimal deletion, security, authentication, and proxy logs may be retained for n
 
 Deleted server data may remain in encrypted disaster-recovery snapshots for up to 7 days. These snapshots are isolated from ordinary use and automatically expire or are overwritten. Any longer retention would occur only if required by law.
 
+Each incoming support message and its private KV record are configured to expire 30 days after receipt. Sending a reply does not extend that period. The developer may delete a message earlier when it is no longer needed or when you request early deletion from the same sender address. Deleting a Night Atlas account does not automatically identify or delete separate support correspondence; request early deletion through the support address. Cloudflare, Yandex Cloud, and your email provider may separately retain limited security, activity, and delivery metadata under their service terms or legal obligations.
+
 ## Tracking, Advertising, And Analytics
 
-Night Atlas does not show ads, use advertising identifiers, track you across apps or websites, or include third-party analytics SDKs.
+Night Atlas does not show ads, use advertising identifiers, track you across apps or websites, or include third-party analytics SDKs. Support email does not use open or click tracking.
 
 ## Security
 
-We use reasonable technical safeguards, including HTTPS/TLS in transit, access controls, and encrypted disaster-recovery snapshots. No system can guarantee absolute security.
+We use reasonable technical safeguards, including HTTPS/TLS in transit, access controls, encrypted disaster-recovery snapshots, exact-address-only support routing, private encrypted-at-rest Workers KV storage, owner-authorized mailbox access, a 10 MiB support message limit, no automatic attachment execution, and a dedicated sender-only Postbox service account. No system can guarantee absolute security.
 
 ## Children
 
@@ -88,15 +102,17 @@ If Night Atlas changes how it handles data, this policy and its updated date wil
 
 Developer: Denis Isupov
 
-For support or privacy questions, use the [Night Atlas GitHub Issues form](https://github.com/IsupDen/night-atlas-pages/issues/new) or see the [support page](support.md).
+For private support, account or deletion help, or privacy questions, email [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me) or see the [support page](support.md).
 
-GitHub issues are public. Do not post your email address, one-time code, login code, session or access token, account, user, or installation identifier, or any other personal or sensitive data. For an account-specific issue, provide only a non-sensitive description; the developer will provide safe next steps.
+Never send a one-time or login code, password, session or access token, deletion-recovery receipt, or any other secret. Night Atlas support will never ask for these secrets.
+
+The [Night Atlas GitHub Issues form](https://github.com/IsupDen/night-atlas-pages/issues/new) is only for non-sensitive general bug reports and feature requests. GitHub issues are public. Do not post your email address, account, user, or installation identifier, or any other personal or sensitive data there.
 
 ---
 
 # Политика конфиденциальности Night Atlas
 
-Дата вступления в силу и последнего обновления: 4 августа 2026 г.
+Дата вступления в силу и последнего обновления: 5 августа 2026 г.
 
 Night Atlas — игра-викторина для изучения географии, которая работает офлайн без аккаунта. В некоторых версиях может быть доступен необязательный аккаунт для синхронизации прогресса. Если в установленной на вашем устройстве версии нет функции аккаунта, приложение не отправляет игровой прогресс или персональные данные на backend Night Atlas. Разделы об обработке данных на сервере применяются только тогда, когда функции аккаунта доступны и вы решили ими воспользоваться.
 
@@ -140,9 +156,21 @@ Night Atlas хранит игровой прогресс локально на �
 
 Мы не используем эти данные для рекламы, отслеживания между приложениями или сайтами, аналитики, профилирования или маркетинга и не продаем их.
 
+## Данные обращений в поддержку по email
+
+Если вы решаете обратиться в поддержку Night Atlas, вы отправляете письмо через собственный почтовый сервис. Приложение Night Atlas открывает внешнюю страницу поддержки и само не передает текст обращения или вложения.
+
+При обработке обращения могут использоваться адреса отправителя и получателя; исходное письмо в формате RFC 5322, включая тему, текстовую или HTML-часть и добровольно добавленные вложения; заголовки доставки, аутентификации и цепочки переписки; служебные метаданные активности провайдеров; а также ограниченные закрытые метаданные хранения: версия записи, время получения и удаления по сроку, размер исходного письма и ограниченная подсказка об отправителе.
+
+Письма в поддержку принимает только точный адрес [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me); маршрутизация catch-all отключена. Cloudflare Email Routing передает входящие письма в отдельный Email Worker, который принимает исходные сообщения размером не более 10 МиБ и хранит их в закрытом пространстве Workers KV. Публичного почтового ящика и автоматического ответа нет. Инструменты поддержки не открывают, не извлекают, не запускают и не сохраняют вложения автоматически. Разработчик просматривает обращения вручную через средства управления Cloudflare с доступом только владельца.
+
+Каждый ответ пишет человек. Ответы отправляются с адреса `support@night-atlas.isupden.me` через отдельную сервисную учетную запись Yandex Cloud Postbox с правом только на отправку. Night Atlas не добавляет отслеживание открытия писем или переходов по ссылкам.
+
 ## Поставщики услуг и место хранения данных
 
-Необязательный сервис аккаунтов использует самостоятельно размещенный открытый backend, совместимый с Supabase и работающий в Yandex Cloud в регионе `ru-central1` в России. Supabase Inc. не размещает этот backend как управляемый сервис. Yandex Cloud предоставляет инфраструктуру хостинга, хранения, сети и безопасности. Yandex Cloud Postbox используется для отправки одноразовых кодов аутентификации по email.
+Необязательный сервис аккаунтов использует самостоятельно размещенный открытый backend, совместимый с Supabase и работающий в Yandex Cloud в регионе `ru-central1` в России. Supabase Inc. не размещает этот backend как управляемый сервис. Yandex Cloud предоставляет инфраструктуру хостинга, хранения, сети и безопасности. Yandex Cloud Postbox используется для отправки одноразовых кодов аутентификации и ответов человека из поддержки по email.
+
+Cloudflare, Inc. предоставляет Email Routing, Email Workers и Workers KV для входящих обращений в поддержку. Cloudflare обрабатывает входящие письма в своей глобальной сети и хранит исходное сообщение в закрытом KV, поэтому данные поддержки могут обрабатываться или храниться за пределами вашей страны и передаваться через границы. Письмо также обрабатывает ваш почтовый провайдер. Yandex Cloud Postbox в России обрабатывает ответы человека и связанные метаданные доставки. Обращения в поддержку не хранятся в базе данных аккаунтов Night Atlas или ее аварийных снимках. Workers KV шифрует сохраненные значения, а соединения между сервисами защищаются при передаче.
 
 Данные аккаунта передаются по HTTPS/TLS. Поставщики услуг обрабатывают данные только в объеме, необходимом для выполнения этих функций или соблюдения закона.
 
@@ -160,13 +188,15 @@ Night Atlas хранит игровой прогресс локально на �
 
 Удаленные серверные данные могут оставаться в зашифрованных снимках аварийного восстановления до 7 дней. Эти снимки изолированы от обычного использования и автоматически удаляются или перезаписываются. Более длительное хранение возможно только тогда, когда этого требует закон.
 
+Каждое входящее обращение и его закрытая запись в KV автоматически удаляются через 30 дней после получения. Отправка ответа не продлевает этот срок. Разработчик может удалить письмо раньше, когда оно больше не нужно или когда вы запрашиваете досрочное удаление с того же адреса отправителя. Удаление аккаунта Night Atlas не позволяет автоматически найти и удалить отдельную переписку с поддержкой; запросите досрочное удаление через адрес поддержки. Cloudflare, Yandex Cloud и ваш почтовый провайдер могут отдельно хранить ограниченные метаданные безопасности, активности и доставки в соответствии со своими условиями или требованиями закона.
+
 ## Трекинг, реклама и аналитика
 
-Night Atlas не показывает рекламу, не использует рекламные идентификаторы, не отслеживает вас между приложениями или сайтами и не содержит сторонних SDK аналитики.
+Night Atlas не показывает рекламу, не использует рекламные идентификаторы, не отслеживает вас между приложениями или сайтами и не содержит сторонних SDK аналитики. В письмах поддержки нет отслеживания открытия или переходов по ссылкам.
 
 ## Безопасность
 
-Мы применяем разумные технические меры защиты, включая HTTPS/TLS при передаче данных, контроль доступа и зашифрованные снимки аварийного восстановления. Ни одна система не может гарантировать абсолютную безопасность.
+Мы применяем разумные технические меры защиты, включая HTTPS/TLS при передаче данных, контроль доступа, зашифрованные снимки аварийного восстановления, прием писем только на точный адрес поддержки, закрытое зашифрованное при хранении пространство Workers KV, доступ к обращениям только владельца, ограничение сообщения 10 МиБ, отсутствие автоматического запуска вложений и отдельную сервисную учетную запись Postbox только для отправки. Ни одна система не может гарантировать абсолютную безопасность.
 
 ## Дети
 
@@ -184,6 +214,8 @@ Night Atlas — географическая игра для широкой ау
 
 Разработчик: Денис Исупов
 
-Для поддержки или вопросов о конфиденциальности используйте [форму GitHub Issues Night Atlas](https://github.com/IsupDen/night-atlas-pages/issues/new) или [страницу поддержки](support.md).
+Для приватного обращения в поддержку, помощи с аккаунтом или его удалением, а также вопросов о конфиденциальности напишите на [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me) или откройте [страницу поддержки](support.md).
 
-Обращения в GitHub Issues публичны. Не публикуйте адрес email, одноразовый код, код входа, токен сессии или доступа, идентификатор аккаунта, пользователя или установки, а также другие персональные или конфиденциальные данные. Для вопроса по конкретному аккаунту опишите только проблему без чувствительных данных; разработчик предложит безопасные дальнейшие шаги.
+Никогда не отправляйте одноразовый код или код входа, пароль, токен сессии или доступа, квитанцию восстановления удаления или другой секрет. Поддержка Night Atlas никогда не запросит эти секреты.
+
+[Форма GitHub Issues Night Atlas](https://github.com/IsupDen/night-atlas-pages/issues/new) предназначена только для общих сообщений об ошибках и предложений без конфиденциальных данных. Обращения в GitHub Issues публичны. Не публикуйте там адрес email, идентификатор аккаунта, пользователя или установки, а также другие персональные или конфиденциальные данные.

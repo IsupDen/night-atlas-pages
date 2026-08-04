@@ -1,12 +1,20 @@
 # Night Atlas Support
 
-Last updated: August 3, 2026
+Last updated: August 5, 2026
 
 Developer: Denis Isupov
 
-For support, bug reports, or privacy questions, open the [Night Atlas GitHub Issues form](https://github.com/IsupDen/night-atlas-pages/issues/new).
+For private support, account or deletion help, or privacy questions, email [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me). Only this exact address accepts support mail; there is no catch-all or public inbox.
 
-GitHub issues are public. Do not post your email address, one-time or login code, session or access token, account, user, or installation identifier, or any other personal or sensitive data. For an account-specific issue, provide only a non-sensitive description; the developer will provide safe next steps.
+Messages are limited to 10 MiB. Plain text is preferred. Attach only files that are necessary and remove secrets or unrelated personal data. Attachments remain inside the raw email and are not automatically opened, extracted, executed, or saved by the support tooling.
+
+Incoming messages are handled by Cloudflare Email Routing and stored privately for no more than 30 days. There is no automatic reply. A human response, when needed, is sent from the same support address through Yandex Cloud Postbox. See the [Privacy Policy](privacy.md) for provider and cross-border processing details.
+
+If needed, you may include the email address associated with your account. Never send a one-time or login code, password, session or access token, deletion-recovery receipt, or any other secret. Night Atlas support will never ask for these secrets.
+
+To request early deletion of a support message, write from the same sender address and include only its approximate date and subject. Account deletion does not automatically delete separate support correspondence.
+
+For non-sensitive general bug reports or feature requests, you may use the [Night Atlas GitHub Issues form](https://github.com/IsupDen/night-atlas-pages/issues/new). GitHub issues are public. Do not post your email address, account, user, or installation identifier, or any other personal or sensitive data. Use the private support email above for account-specific issues.
 
 When reporting a general issue, include your device model, iOS version, app version, selected app language, and a short description of what happened. Do not include sensitive data.
 
@@ -26,13 +34,21 @@ When reporting a general issue, include your device model, iOS version, app vers
 
 # Поддержка Night Atlas
 
-Последнее обновление: 3 августа 2026 г.
+Последнее обновление: 5 августа 2026 г.
 
 Разработчик: Денис Исупов
 
-Для поддержки, сообщений об ошибках или вопросов о конфиденциальности откройте [форму GitHub Issues Night Atlas](https://github.com/IsupDen/night-atlas-pages/issues/new).
+Для приватного обращения в поддержку, помощи с аккаунтом или его удалением, а также вопросов о конфиденциальности напишите на [support@night-atlas.isupden.me](mailto:support@night-atlas.isupden.me). Письма принимает только этот точный адрес; маршрутизации catch-all и публичного почтового ящика нет.
 
-Обращения в GitHub Issues публичны. Не публикуйте адрес email, одноразовый код или код входа, токен сессии или доступа, идентификатор аккаунта, пользователя или установки, а также другие персональные или конфиденциальные данные. Для вопроса по конкретному аккаунту опишите только проблему без чувствительных данных; разработчик предложит безопасные дальнейшие шаги.
+Размер сообщения ограничен 10 МиБ. Предпочтителен обычный текст. Прикладывайте только необходимые файлы и удаляйте из них секреты и лишние персональные данные. Вложения остаются внутри исходного письма и не открываются, не извлекаются, не запускаются и не сохраняются инструментами поддержки автоматически.
+
+Входящие письма обрабатываются Cloudflare Email Routing и хранятся в закрытом виде не более 30 дней. Автоматического ответа нет. При необходимости человек отвечает с того же адреса поддержки через Yandex Cloud Postbox. Сведения о провайдерах и трансграничной обработке приведены в [Политике конфиденциальности](privacy.md).
+
+При необходимости можно указать адрес email, связанный с аккаунтом. Никогда не отправляйте одноразовый код или код входа, пароль, токен сессии или доступа, квитанцию восстановления удаления или другой секрет. Поддержка Night Atlas никогда не запросит эти секреты.
+
+Чтобы запросить досрочное удаление обращения, напишите с того же адреса отправителя и укажите только примерную дату и тему письма. Удаление аккаунта не удаляет отдельную переписку с поддержкой автоматически.
+
+Для общих сообщений об ошибках и предложений, не содержащих конфиденциальных данных, можно использовать [форму GitHub Issues Night Atlas](https://github.com/IsupDen/night-atlas-pages/issues/new). Обращения в GitHub Issues публичны. Не публикуйте адрес email, идентификатор аккаунта, пользователя или установки, а также другие персональные или конфиденциальные данные. Для вопросов по конкретному аккаунту используйте приватный адрес поддержки выше.
 
 В обычном сообщении об ошибке укажите модель устройства, версию iOS, версию приложения, выбранный язык приложения и краткое описание произошедшего. Не включайте чувствительные данные.
 
